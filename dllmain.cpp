@@ -30,7 +30,7 @@ extern "C" __declspec(dllexport)  std::string id() {
     return "HI";
 }
 
-extern "C" __declspec(dllexport) std::string plugin(std::map<std::string, Object>& satori, std::map<std::string, Object>& users, std::map<std::string, std::vector<std::string>>& owners, std::map<std::string, std::pair<std::string, int>>& peers, std::map<std::string, std::pair<std::string, std::string(*)(json)>>& functions, std::string(*is_main_owner)(json, std::string(*jic)(json)), void(*is_owner)(json), void(*)(std::string, std::string), std::string(*is_closest_owner)(json, std::string) , json rq) {
+extern "C" __declspec(dllexport) std::string plugin(std::map<std::string, Object>& satori, std::map<std::string, Object>& users, std::map<std::string, std::vector<std::string>>& owners, std::map<std::string, std::pair<std::string, int>>& peers, std::map<std::string, std::pair<std::string, std::string(*)(json)>>& functions, std::string(*redirection)(json, std::string(*jic)(json)), void(*notify)(json), void(*notify_ownership)(std::string, std::string), std::string(*specific_redirect)(json, std::string) , json rq) {
    //Specify command behavior
     return "HI!";
 }
