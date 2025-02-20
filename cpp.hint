@@ -1,0 +1,2 @@
+#define SATORIPLUGIN_API __declspec(dllexport)
+#define SATORIPLUGIN_API __declspec(dllimport)
